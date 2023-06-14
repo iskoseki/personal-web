@@ -15,7 +15,7 @@ function classNames(...classes) {
 export default function Navigation() {
   return (
     <>
-      <div className="fixed  z-10 w-full">
+      <div className="fixed z-50 w-full">
         <Disclosure as="nav" className="  bg-slate-50">
           {({ open }) => (
             <>
@@ -23,7 +23,10 @@ export default function Navigation() {
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <a href="/" className="text-4xl font-black   text-black">
+                      <a
+                        href="/"
+                        className="text-4xl shadow-lg font-black   text-black"
+                      >
                         <FaCode />
                       </a>
                     </div>

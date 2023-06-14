@@ -1,16 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+import App from "./App.tsx";
 import ErrorPage from "./error-page.tsx";
 import Projects from "./routes/Projects.tsx";
 import Contact from "./routes/Contact.tsx";
-import Layout from "./components/layout.tsx";
+import Layout from "./components/Layout";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <React.Suspense fallback="Loading">
+        <App />
+      </React.Suspense>
+    ),
     errorElement: <ErrorPage />,
   },
 
@@ -25,6 +29,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
 ]);
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <Layout>

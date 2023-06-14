@@ -14,9 +14,9 @@ const Presentation: FC = () => {
             alt="porfile"
           />
         </div>
-        <div className="  w-96 md:w-auto">
-          <h1 className="text-left font-black  text-4xl xl:text-6xl ">
-            Hello everyone, I'm Leandro Bordon 👋🏻 
+        <div className="flex flex-col mx-8 md:w-auto">
+          <h1 className="text-left font-black  text-3xl xl:text-6xl ">
+            Hello everyone, I'm Leandro Bordon 👋🏻
           </h1>
 
           <p className="text-left lg:text-2xl  mt-3">
