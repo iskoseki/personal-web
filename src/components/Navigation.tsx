@@ -1,10 +1,9 @@
-import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
+import { FaCode } from "react-icons/fa";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "About", href: "/about", current: false },
   { name: "Projects", href: "/projects", current: false },
   { name: "Contact", href: "/contact", current: false },
 ];
@@ -16,7 +15,7 @@ function classNames(...classes) {
 export default function Navigation() {
   return (
     <>
-      <div className="fixed w-full">
+      <div className="fixed  z-10 w-full">
         <Disclosure as="nav" className="  bg-slate-50">
           {({ open }) => (
             <>
@@ -25,11 +24,11 @@ export default function Navigation() {
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <a href="/" className="text-4xl font-black   text-black">
-                        👷🏼
+                        <FaCode />
                       </a>
                     </div>
-                    <div className="hidden md:block">
-                      <div className="ml-10 flex items-baseline space-x-4">
+                    <div className="hidden  md:block">
+                      <div className="ml-10 justify-end flex items-baseline space-x-4">
                         {navigation.map((item) => (
                           <a
                             key={item.name}

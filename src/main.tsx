@@ -4,30 +4,31 @@ import App from "./App.tsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page.tsx";
+import Projects from "./routes/Projects.tsx";
+import Contact from "./routes/Contact.tsx";
+import Layout from "./components/layout.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: "/about",
-    element: <p>About page.</p>,
-    errorElement: <ErrorPage />,
-  },
+
   {
     path: "/projects",
-    element: <p>Projects page.</p>,
+    element: <Projects />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/contact",
-    element: <p>Contact page.</p>,
+    element: <Contact />,
     errorElement: <ErrorPage />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Layout>
+      <RouterProvider router={router} />
+    </Layout>
   </React.StrictMode>
 );

@@ -1,13 +1,12 @@
-import Footer from "../components/Footer";
-import Navigation from "../components/Navigation";
+import Layout from "../components/layout";
 import Presentation from "../components/Presentation";
 
 export default function Root() {
   return (
     <>
-      <Navigation />
-      <Presentation />
-      <Footer />
+      <Layout>
+        <Presentation />
+      </Layout>
     </>
   );
 }

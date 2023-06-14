@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { FaGithub, FaCoffee, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 const Presentation: FC = () => {
@@ -16,7 +16,7 @@ const Presentation: FC = () => {
         </div>
         <div className="  w-96 md:w-auto">
           <h1 className="text-left font-black  text-4xl xl:text-6xl ">
-            Hello everyone, I'm Leandro Bordon 👋🏻 <FaCoffee />
+            Hello everyone, I'm Leandro Bordon 👋🏻 
           </h1>
 
           <p className="text-left lg:text-2xl  mt-3">
