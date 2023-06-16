@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Contact: FC = () => {
   return (
-    <section className="text-gray-600 body-font relative  overflow-hidden">
+    <section className="text-gray-600 relative h-screen   overflow-hidden">
       <div className="absolute inset-0 blur-sm  bg-gray-100">
         <iframe
           className="ifram xl:w-screen sm:h-screen h-full w-full"
@@ -11,7 +11,7 @@ const Contact: FC = () => {
         ></iframe>
       </div>
 
-      <div className="container px-5  justify-center items-center  mx-auto flex flex-wrap  ">
+      <div className="container pt-28 px-5 flex flex-wrap  justify-center items-center  mx-auto   ">
         <div className="z-10 w-96 xl:w-2/4 px-10 py-5 bg-white">
           <h1 className=" text-6xl font-black text-black">
             Let's work together!
