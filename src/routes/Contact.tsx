@@ -10,7 +10,6 @@ const Contact: FC = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.57857593232!2d-60.77921227296001!3d-32.952182141983656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe%20Province!5e0!3m2!1sen!2sar!4v1686763774990!5m2!1sen!2sar"
         ></iframe>
       </div>
-
       <div className="container pt-28 px-5 flex flex-wrap  justify-center items-center  mx-auto   ">
         <div className="z-10 w-96 xl:w-2/4 px-10 py-5 bg-white">
           <h1 className=" text-6xl font-black text-black">
