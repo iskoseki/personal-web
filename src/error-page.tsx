@@ -4,7 +4,6 @@ import Navigation from "./components/Navigation";
 export default function ErrorPage() {
   const error = useRouteError();
   console.error("Error:", error);
-
   return (
     <>
       <Navigation />

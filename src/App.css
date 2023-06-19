@@ -1,6 +1,6 @@
 /* This is just to transition when you change the viewport size. */
 * {
-  transition: all 0.9s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .ifram {

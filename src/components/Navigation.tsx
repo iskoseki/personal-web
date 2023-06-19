@@ -3,7 +3,7 @@ import { FaCode } from "react-icons/fa";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
+  { name: "Home", href: "/", current: false },
   { name: "Projects", href: "/projects", current: false },
   { name: "Contact", href: "/contact", current: false },
 ];
@@ -20,12 +20,12 @@ export default function Navigation() {
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex h-12 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <a
                         href="/"
-                        className="text-4xl shadow-lg font-black   text-black"
+                        className="text-3xl shadow-lg font-black   text-black"
                       >
                         <FaCode />
                       </a>
@@ -57,12 +57,12 @@ export default function Navigation() {
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XMarkIcon
-                          className="block h-6 w-6"
+                          className="block  h-4 w-4"
                           aria-hidden="true"
                         />
                       ) : (
                         <Bars3Icon
-                          className="block h-6 w-6"
+                          className="block h-4 w-4"
                           aria-hidden="true"
                         />
                       )}

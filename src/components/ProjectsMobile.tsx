@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+
 // import required modules
 import { Project } from "../utils/ProjectsList";
 
@@ -24,19 +25,19 @@ const ProjectsMobile = ({ projects }: Props) => {
       className="mySwiper"
     >
       {projects.map((item) => (
-        <SwiperSlide key={item.name}>
+        <SwiperSlide key={item?.id}>
           <div className="xl:w-1/4 md:w-1/2 p-4">
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
-                src={item.img}
+                src={item?.img}
                 alt="content"
               />
               <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                {item.name}
+                {item?.name}
               </h3>
               <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                {item.name}
+                {item?.name}
               </h2>
               <p className="leading-relaxed text-base">
                 Fingerstache flexitarian street art 8-bit waistcoat. Distillery
