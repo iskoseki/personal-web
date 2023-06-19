@@ -2,7 +2,7 @@ import { useRouteError } from "react-router-dom";
 import Navigation from "./components/Navigation";
 
 export default function ErrorPage() {
-  const error: unknown = useRouteError();
+  const error = useRouteError();
   console.error("Error:", error);
 
   return (
@@ -15,7 +15,7 @@ export default function ErrorPage() {
         <h1 className="text-6xl p-5 animate-bounce">Oops!</h1>
         <p className="text-md">Sorry, an unexpected error has occurred.</p>
         <p>
-          <i>{error?.statusText || error?.message}</i>
+          <i></i>
         </p>
       </div>
     </>

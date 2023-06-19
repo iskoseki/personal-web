@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
-import { Project } from "../routes/Projects";
+import { Project } from "../utils/ProjectsList";
 
 interface Props {
   projects: Project[];
@@ -22,7 +21,6 @@ const ProjectsMobile = ({ projects }: Props) => {
         slideShadows: true,
       }}
       pagination={false}
-      modules={[EffectCoverflow, Pagination]}
       className="mySwiper"
     >
       {projects.map((item) => (
