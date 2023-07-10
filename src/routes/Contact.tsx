@@ -1,71 +1,146 @@
 import { FC } from "react";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { IconContext } from "react-icons";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+const ParallaxContainer = () => {
+  return (
+    <Parallax
+      pages={3}
+      style={{ backgroundColor: "white", top: "0", left: "0" }}
+    >
+      <ParallaxLayer offset={0} speed={1}>
+        <header className="mx-auto  flex flex-wrap h-screen text-black  justify-center items-center">
+          <div className="flex container sm:w-auto w-80  flex-col md:flex-row md:gap-10 ">
+            <div className="flex flex-col mx-4 md:w-auto">
+              <h1 className="text-left font-black  text-3xl xl:text-6xl ">
+                Bespoke Software Development from Conception to Delivery{" "}
+              </h1>
+
+              <p className="text-left lg:text-2xl  mt-3">
+                We design, develop and deliver intelligent high-tech bespoke
+                software solutions for{" "}
+                <span className="font-bold">Artists</span> and{" "}
+                <span className="font-bold">Brands.</span>
+              </p>
+              <div className="flex gap-5 mt-6">
+                <a
+                  href="https://github.com/kosekijsx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <IconContext.Provider
+                    value={{
+                      color: "",
+                      size: "30px",
+                      className: "global-class-name",
+                    }}
+                  >
+                    <FaGithub />
+                  </IconContext.Provider>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/leandro-bordon/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconContext.Provider
+                    value={{
+                      color: "",
+                      size: "30px",
+                      className: "global-class-name",
+                    }}
+                  >
+                    <FaLinkedin />
+                  </IconContext.Provider>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </ParallaxLayer>
+      <ParallaxLayer offset={1} speed={0}>
+        <div className=" container pt-28 px-5 flex h-screen flex-wrap  justify-center items-center  mx-auto   ">
+          <div className=" z-10 max-w-screen-sm xl:w-2/4 px-5 mx-4 py-5">
+            <h1 className=" text-5xl font-black text-black">
+              Let's work together!
+            </h1>
+            <p className="text-xl mt-5 text-black ">
+              I been working in Front-end projects since 2021 and I'm sure that
+              you'll find my experince very usefull for your brand.
+            </p>
+          </div>
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer offset={2} speed={1.5}>
+        <section className="mx-2 flex justify-center items-center h-screen ">
+          <div className="py-8 px-4 mx-auto rounded-sm bg-black max-w-screen-sm lg:py-16 lg:px-6">
+            <div className="mx-auto max-w-screen-md sm:text-center">
+              <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
+                Sign up for contact
+              </h2>
+              <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
+                Stay up to date with the roadmap progress, announcements and
+                exclusive discounts feel free to sign up with your email.
+              </p>
+              <form action="#">
+                <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                  <div className="relative w-full">
+                    <label className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                      Email address
+                    </label>
+                    <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                      <svg
+                        className="w-5 h-5 text-gray-500 dark:text-gray-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                      </svg>
+                    </div>
+                    <input
+                      className="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      placeholder="Enter your email"
+                      type="email"
+                      id="email"
+                    />
+                  </div>
+                  <div>
+                    <button
+                      type="submit"
+                      className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+                <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
+                  We care about the protection of your data.{" "}
+                  <a
+                    href="#"
+                    className="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                  >
+                    Read our Privacy Policy
+                  </a>
+                  .
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </ParallaxLayer>
+    </Parallax>
+  );
+};
 
 const Contact: FC = () => {
   return (
-    <section className="text-gray-600 relative h-screen   overflow-hidden">
-      <div className="absolute inset-0 blur-sm  bg-gray-100">
-        <iframe
-          className="ifram xl:w-screen sm:h-screen h-full w-full"
-          title="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.57857593232!2d-60.77921227296001!3d-32.952182141983656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe%20Province!5e0!3m2!1sen!2sar!4v1686763774990!5m2!1sen!2sar"
-        ></iframe>
-      </div>
-      <div className="container pt-28 px-5 flex flex-wrap  justify-center items-center  mx-auto   ">
-        <div className="z-10 w-96 xl:w-2/4 px-10 py-5 bg-white">
-          <h1 className=" text-6xl font-black text-black">
-            Let's work together!
-          </h1>
-          <p className="text-xl mt-5 ">
-            I been working in Front-end projects since 2021 and I'm sure that
-            you'll find my experince very usefull for your brand.
-          </p>
-        </div>
-        <div
-          className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex  flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 
-        shadow-md"
-        >
-          <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-            Contact Form{" "}
-          </h2>
-          <p className="leading-relaxed mb-5 text-gray-600">
-            Tell me more about your goals y requires in a message and I'll start
-            immediately to to help you as soon as posible 🤜🏽🤛🏽
-          </p>
-          <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-600">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div className="relative mb-4">
-            <label
-              htmlFor="message"
-              className="leading-7 text-sm text-gray-600"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-            ></textarea>
-          </div>
-          <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            Send
-          </button>
-          <p className="text-xs text-gray-500 mt-3">
-            Every mail will be responde between the next two (2) days. <br></br>
-            -we will not use your email to anything else. We'll just respond you
-            first.
-          </p>
-        </div>
-      </div>
-    </section>
+    <div className="bg-white">
+      <ParallaxContainer />
+    </div>
   );
 };
 export default Contact;
