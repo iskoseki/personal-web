@@ -9,7 +9,7 @@ import { Project, Projectos } from "../utils/ProjectsList";
 const PrjectTitle = () => {
   return (
     <>
-      <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+      <div className=" lg:w-1/2 w-full mb-6 lg:mb-0">
         <h1 className="sm:text-6xl text-white text-6xl font-bold title-font mb-2">
           Some projects
         </h1>

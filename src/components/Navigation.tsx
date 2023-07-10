@@ -15,12 +15,12 @@ function classNames(...classes: string[]) {
 export default function Navigation() {
   return (
     <>
-      <div className="fixed z-50 w-full">
-        <Disclosure as="nav" className="  bg-slate-50">
+      <div className="fixed z-50 w-full bg-slate-50 drop-shadow-lg">
+        <Disclosure as="nav" className=" ">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-12 items-center justify-between">
+                <div className="flex h-14 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <a

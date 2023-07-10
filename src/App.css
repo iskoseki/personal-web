@@ -1,8 +1,8 @@
-/* This is just to transition when you change the viewport size. */
+/* This is just to transition when you change the viewport size.
 * {
   transition: all 0.4s ease-out;
 }
-
+ */
 .ifram {
   filter: grayscale(1) contrast(1.2) opacity(0.4);
 }
