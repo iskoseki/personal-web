@@ -15,15 +15,18 @@ export default function Navigation() {
   return (
     <>
       <div className="fixed z-50 w-full">
-        <Disclosure as="nav" className="  bg-transparent">
+        <Disclosure as="nav" className="">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl  px-4 sm:px-6 lg:px-8">
                 <div className="flex h-12 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <a href="/" className="text-3xl font-black text-black ">
-                        kose.com
+                      <a
+                        href="/"
+                        className="text-2xl font-black text-black antialiased"
+                      >
+                        critikal.com
                       </a>
                     </div>
                   </div>

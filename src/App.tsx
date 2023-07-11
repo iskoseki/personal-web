@@ -1,31 +1,22 @@
-import { useEffect, useState } from "react";
+import { Suspense, lazy } from "react";
 import "./App.css";
-import Root from "./routes/root";
+const Root = lazy(() => import("./routes/root"));
 import ReactLoading from "react-loading";
 
 const LoadComponent = () => {
-  return (
-    <ReactLoading type={"bars"} color={"white"} height={150} width={150} />
-  );
+  return <ReactLoading type={"bars"} height={"50%"} width={"50%"} />;
 };
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(false);
-    setTimeout(() => {
-      setLoading(true);
-    }),
-      6000;
-  }, []);
-
-  return !loading ? (
-    <div className="flex justify-center h-screen items-center">
-      {" "}
-      <LoadComponent />{" "}
-    </div>
-  ) : (
-    <Root />
+  return (
+    <Suspense
+      fallback={
+        <div className="flex justify-center items-center h-screen">
+          <LoadComponent />
+        </div>
+      }
+    >
+      <Root />
+    </Suspense>
   );
 }
 

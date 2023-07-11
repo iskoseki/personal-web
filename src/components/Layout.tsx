@@ -1,5 +1,6 @@
+import React from "react";
 import Footer from "./Footer";
-import Navigation from "./Navigation";
+const Navigation = React.lazy(() => import("./Navigation"));
 
 type MyComponentProps = React.PropsWithChildren<object>;
 
@@ -7,7 +8,10 @@ const Layout = ({ children }: MyComponentProps) => {
   return (
     <>
       <Navigation />
-      <main>{children}</main>
+      <React.Suspense>
+        <main>{children}</main>
+      </React.Suspense>
+
       <Footer />
     </>
   );
