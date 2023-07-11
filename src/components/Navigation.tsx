@@ -1,5 +1,4 @@
 import { Disclosure } from "@headlessui/react";
-import { FaCode } from "react-icons/fa";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
@@ -15,43 +14,24 @@ function classNames(...classes: string[]) {
 export default function Navigation() {
   return (
     <>
-      <div className="fixed z-50 w-full bg-slate-50 drop-shadow-lg">
-        <Disclosure as="nav" className=" ">
+      <div className="fixed z-50 w-full">
+        <Disclosure as="nav" className="">
           {({ open }) => (
             <>
-              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-14 items-center justify-between">
+              <div className="mx-auto max-w-7xl  px-4 sm:px-6 lg:px-8">
+                <div className="flex h-12 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <a
                         href="/"
-                        className="text-3xl shadow-lg font-black   text-black"
+                        className="text-2xl font-black text-black antialiased"
                       >
-                        <FaCode />
+                        critikal.com
                       </a>
-                    </div>
-                    <div className="hidden  md:block">
-                      <div className="ml-10 justify-end flex items-baseline space-x-4">
-                        {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            className={classNames(
-                              item.current
-                                ? "bg-gray-900 text-white"
-                                : "text-gray-600 hover:bg-gray-800 hover:text-white",
-                              "rounded-md px-3 py-2 text-sm font-medium"
-                            )}
-                            aria-current={item.current ? "page" : undefined}
-                          >
-                            {item.name}
-                          </a>
-                        ))}
-                      </div>
                     </div>
                   </div>
 
-                  <div className="-mr-2 flex md:hidden">
+                  <div className="-mr-2 flex ">
                     {/* Mobile menu button */}
                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md  bg-gray-900 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Open main menu</span>
@@ -71,8 +51,8 @@ export default function Navigation() {
                 </div>
               </div>
 
-              <Disclosure.Panel className="md:hidden">
-                <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+              <Disclosure.Panel className="">
+                <div className="space-y-1 opacity-80 bg-black px-2 pb-3 pt-2 sm:px-3">
                   {navigation.map((item) => (
                     <Disclosure.Button
                       key={item.name}
@@ -80,8 +60,8 @@ export default function Navigation() {
                       href={item.href}
                       className={classNames(
                         item.current
-                          ? "bg-gray-900 text-white"
-                          : "text-gray-600 hover:bg-gray-900 hover:text-white",
+                          ? "bg-gray-900  text-white"
+                          : "text-white hover:bg-gray-900 hover:text-white",
                         "block rounded-md px-3 py-2 text-base font-medium"
                       )}
                       aria-current={item.current ? "page" : undefined}

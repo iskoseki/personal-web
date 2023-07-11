@@ -15,7 +15,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@react-spring/parallax": "^9.7.3",
+    "@react-spring/web": "^9.7.3",
     "@types/node": "^20.3.1",
+    "axios": "^1.4.0",
     "headlessui": "^0.0.0",
     "heroicons": "^2.0.18",
     "localforage": "^1.10.0",
@@ -28,7 +31,11 @@
     "react-spinners": "^0.13.8",
     "sort-by": "^1.2.0",
     "swiper": "^9.4.1",
+<<<<<<< HEAD
     "tailwindcss-animated": "^1.0.1"
+=======
+    "unsplash-js": "^7.0.18"
+>>>>>>> dev
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
