@@ -31,11 +31,7 @@
     "react-spinners": "^0.13.8",
     "sort-by": "^1.2.0",
     "swiper": "^9.4.1",
-<<<<<<< HEAD
-    "tailwindcss-animated": "^1.0.1"
-=======
     "unsplash-js": "^7.0.18"
->>>>>>> dev
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
