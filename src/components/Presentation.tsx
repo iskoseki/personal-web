@@ -1,4 +1,4 @@
-import { FC} from "react";
+import { FC } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { IconContext } from "react-icons";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -6,17 +6,17 @@ import Carrousel from "../components/Carrousel";
 
 export const Header = () => {
   return (
-    <header className="flex flex-wrap h-screen justify-center items-center">
-      <div className="flex sm:w-auto w-80  flex-col md:flex-row md:gap-10 ">
-        <div className="flex flex-col mx-8 lg:w-24 ">
-          <p className="">We design, develop and deliver</p>
-          <h1 className=" font-black  text-3xl xl:text-6xl ">
-            Bespoke Software Development
+    <header className="mx-auto  bg-blue-500 flex flex-wrap h-screen text-black  justify-center items-center">
+      <div className="flex container sm:w-auto w-80  flex-col md:flex-row md:gap-10 ">
+        <div className="flex flex-col mx-4 md:w-auto">
+          <h1 className="  md:tracking-widest antialiased text-left font-black text-3xl xl:text-6xl ">
+            Bespoke Web Development from Conception to Delivery{" "}
           </h1>
 
-          <p className="text lg:text-2xl  mt-3">
+          <p className=" leading-7 text-2xl text-left lg:text-2xl  mt-3">
             We design, develop and deliver intelligent high-tech bespoke
-            software solutions for{" "}
+            software solutions for <span className="font-bold">Artists</span>{" "}
+            and <span className="font-bold">Brands.</span>
           </p>
           <div className="flex gap-5 mt-6">
             <a

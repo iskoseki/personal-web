@@ -10,9 +10,9 @@ import styles from "../styles.module.css";
 export const FirstSections = () => {
   return (
     <div className=" container pt-28 px-5 flex h-screen flex-wrap  justify-center items-center  mx-auto   ">
-      <div className=" z-10 max-w-screen-sm xl:w-2/4 px-5 mx-4 py-5">
-        <h1 className=" text-5xl font-black text-blue-500 ">
-          Let's work together!
+      <div className="text-center z-10 max-w-screen-sm xl:w-2/4 px-5 mx-4 py-5">
+        <h1 className=" text-6xl xl:text-8xl font-black text-blue-500 ">
+          Let's work <br></br>together!
         </h1>
       </div>
     </div>
@@ -20,12 +20,12 @@ export const FirstSections = () => {
 };
 export const SecondSections = () => {
   return (
-    <div className=" container pt-28 px-5 flex h-screen flex-wrap  justify-center items-center  mx-auto   ">
+    <div className="text-center container pt-28 px-5 flex h-screen flex-wrap  justify-center items-center  mx-auto   ">
       <div className=" z-10 max-w-screen-sm xl:w-2/4 px-5 mx-4 py-5">
         <p className="text-2xl xl:text-5xl text-blue-400 ">
           <span className="  font-black">We</span> combine unique, tried and
           tested methodologies with a dedicated team to{" "}
-          <span className="font-thin underline">design</span>,{" "}
+          <span className="font-extralight underline">design</span>,{" "}
           <span className=" font-extralight underline">develope</span> and
           deliver{" "}
           <span className="font-extralight underline">bespoke software</span> to
@@ -39,7 +39,7 @@ export const ThirdSections = () => {
   return (
     <div className=" container pt-28 px-5 flex h-screen flex-wrap  justify-center items-center  mx-auto   ">
       <div className=" z-10 max-w-screen-sm xl:w-2/4 px-5 mx-4 py-5">
-        <p className="text-2xl text-blue-400 ">
+        <p className="text-center text-2xl text-blue-400 ">
           We will be with you every step of the way – from initial planning to
           delivery, and beyond
         </p>
